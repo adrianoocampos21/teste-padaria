@@ -1,0 +1,274 @@
+/*
+paleta de cores:
+#401722
+#C79DA7
+#BF5A7F
+#F2C2D4
+#F2E9EC
+
+#ddd0c5
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --botao1: #ffffff;
+    --botaohvr1: pink;
+    --fontebotao: #000000;
+
+    --botao2: #ffffff;
+    --botaohvr2: pink;
+
+    --fonte1: #401722;
+    --fonte2: #C79DA7;
+
+    --detalhe: #BF5A7F;
+    --fundo1: #F2C2D4;
+    --fundo2: #F2E9EC;
+    --fundo3: #ddd0c5;
+
+    --sombra: rgba(138, 133, 133, 0.352);
+}
+
+body {
+    transition: 4s;
+
+    max-width: 1060px;
+    margin: auto;
+    background-image: url(img/fundo-padaria-color.jpg);
+
+    color: var(--fonte1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    background-color: var(--fundo3);
+    border-radius: 10px 10px 10px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4%;
+
+    position: sticky;
+    top: 0;
+}
+
+header div {
+    display: block;
+}
+
+header div#logo img {
+    margin: 2px;
+    
+    max-width: 100px;
+    display: block;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    
+    transition-duration: 0.9s;
+    
+    color: var(--fontebotao);
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    transition-duration: 0.5s;
+
+    margin: 10px;
+
+    background-color: var(--botaohvr1);
+    color: var(--fonte1);
+    box-shadow: 1px 4px 15px var(--sombra);
+    border-radius: 15px;
+}
+
+main {
+    
+    background-color: var(--fundo3);
+    padding-top: 20px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 15px rgba(84, 84, 84, 0.498);
+}
+
+div.botao {
+    transition: 5s;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    
+    border-radius: 15px;
+    margin: 40px;
+
+}
+
+div.botao a {
+    width: 150px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+
+    transition-duration: 0.9s;
+    background-color: var(--fundo1);
+    color: var(--fontebotao);
+    box-shadow: 1px 4px 15px var(--sombra);
+    border-radius: 30px;
+
+    font: normal bold 1.1em verdana;
+}
+
+div.botao a:hover {
+    transition-duration: 0.9s;
+
+    width: 180px;
+
+    color: var(--fonte1);
+    background-color: var(--detalhe);
+    box-shadow: 2px 0px 10px var(--sombra);
+}
+
+div.container {
+    padding-top: 50px;
+    transition: 3.5s;
+
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: start;
+    align-content: stretch;
+    gap: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 50px;
+}
+
+section p {
+    background-color: var(--fundo1);
+    box-shadow: 1px 4px 15px var(--sombra);
+    border-radius: 15px;
+}
+
+div#container img{
+    transition: 1s;
+    max-width: 560px;
+    box-shadow: 1px 4px 15px var(--sombra);
+    border-radius: 15px;
+}
+
+div#container img:hover {
+    transition: 1s;
+    max-width: 600px;
+}
+
+div#container p {
+    max-width: 350px;
+    text-align: center;
+    padding-top: 50px;
+    font: normal bold 1em verdana;
+    line-height: 2em;
+}
+
+div#div-cardapio {
+    background-color: #ddd0c5;
+    margin: auto;
+    max-width: 820px;
+    display: flex;
+    flex: row;
+}
+
+section#cardapio {
+    display: flex;
+    width: 600px;
+    margin: auto;
+    flex-direction: column;
+}
+
+section#cardapio iframe {
+    width: 620px;
+    height: 1070px;
+}
+
+
+div#div-cardapio h2 {
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 30px;
+
+    background-color: var(--botaohvr2);
+    box-shadow: 1px 1px 10px rgba(55, 55, 55, 0.456);
+}
+
+
+div#div-cardapio h2:hover {
+    transition-duration: 0.9s;
+
+    width: 180px;
+
+
+    border-radius: 15px;
+    box-shadow: 2px 0px 10px var(--sombra);
+}
+
+/*
+section#desc {
+    display: flex;
+    
+    flex-direction: column;
+}
+div#div-cardapio p {
+    max-width: 350px;
+    text-align: center;
+    padding-top: 50px;
+    font: normal bold 1em verdana;
+    line-height: 2em;
+    margin: auto;
+    padding: 5px;
+}
+*/
+
+aside {
+    padding-top: 100px;
+}
+
+footer {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: var(--fundo1);
+    border-radius: 15px 15px 15px 15px;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    gap: 10%;
+}
